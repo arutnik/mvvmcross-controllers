@@ -1,0 +1,73 @@
+﻿Steps to Enabling Controllers in your MvvmCross solution:
+
+===Required Steps===
+
+1. Replace default ViewModelLocator with BindingViewModelLocator
+
+--This causes MvvmCross to create a new controller for a view model upn navigation to it.
+--This example application shows how to replace the locator:
+
+namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore
+{
+    public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
+    {
+        //Add your own usual overrides...
+        //...
+
+        protected override MvvmCross.ViewModels.IMvxViewModelLocator CreateDefaultViewModelLocator()
+        {
+            var defaultLocator = base.CreateDefaultViewModelLocator();
+            
+            var binder = new ViewModelBinder(CreatableTypes);
+
+            // register default view model binder
+            Mvx.RegisterSingleton<IViewModelBinder>(binder);
+
+            return new BindingViewModelLocator(defaultLocator, binder);
+        }
+    }
+}
+
+2. ViewModels with controllers must inherit from ControllerViewModelBase or implement IControllerAware
+
+namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore.ViewModels
+{
+    public class FirstViewModel 
+		: ControllerViewModelBase
+    {
+    
+    //...
+    }
+}
+    
+3. Add controllers to the core project following the convention of [ViewModelTypeName].Replace("ViewModel","Controller")
+
+namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore.Controllers
+{
+    public class FirstController : MvxController<FirstViewModel>
+    {
+        public FirstController(IPhotoPicker service)
+        {
+            //Injection constructor allowed on controllers
+        }
+        
+        
+        protected override async Task OnControllerInitialize()
+        {
+            //Example initialization
+            ViewModel.Hello = "Hello MvvmCross with Controllers.";
+        }
+    
+    
+    }
+}
+
+
+This is all you need to have your controllers created, intialized and attached to your view models whenever a view model is requested.
+
+
+===Optional Steps===
+
+To enable SaveState/ReloadState methods, Disposal methods and Activate/Deactivate methods, additional code must be added to the View layer for each platform you build on.
+
+For more details, see https://github.com/arutnik/mvvmcross-controllers/wiki
