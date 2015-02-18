@@ -17,12 +17,7 @@ namespace Cirrious.MvvmCross.Plugins.Controllers.SampleStore
 
         protected override IMvxApplication CreateApp()
         {
-            //Createable types function should be only evaluated once if it never changes.
-            var lazyCreateableTypes = new Lazy<Type[]>(() => CreatableTypes().ToArray());
-
             var app = new SampleCore.App();
-            app.GetCreateableTypes = () => lazyCreateableTypes.Value;
-
             return app;
         }
 		

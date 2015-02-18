@@ -9,8 +9,6 @@ namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore
 {
     public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
     {
-        public Func<IEnumerable<Type>> GetCreateableTypes { get; set; }
-
         public override void Initialize()
         {
             CreatableTypes()
