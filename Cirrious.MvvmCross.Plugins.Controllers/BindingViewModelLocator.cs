@@ -32,5 +32,18 @@ namespace Cirrious.MvvmCross.Plugins.Controllers
 
 			return viewModel;
 		}
+
+
+        public IMvxViewModel Reload(IMvxViewModel viewModel, IMvxBundle parameterValues, IMvxBundle savedState)
+        {
+            var vm = _coreViewModelLocator.Reload(viewModel, parameterValues, savedState);
+
+            if (vm != null)
+            {
+                _viewModelBinder.Reload(vm, parameterValues, savedState);
+            }
+
+            return vm;
+        }
     }
 }

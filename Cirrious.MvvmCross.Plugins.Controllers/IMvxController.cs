@@ -16,5 +16,13 @@ namespace Cirrious.MvvmCross.Plugins.Controllers
 		/// </summary>
 		/// <returns>A task for awaiting initialization.</returns>
 		Task WaitForInitialize();
+
+        /// <summary>
+        /// Called when a controller is being recycled for
+        /// ViewModel reload purposes. After calling this,
+        /// calling WaitForInitialize should start a new
+        /// intialization routine.
+        /// </summary>
+        void Recreate();
     }
 }

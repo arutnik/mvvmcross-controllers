@@ -1,4 +1,5 @@
-﻿using Cirrious.MvvmCross.ViewModels;
+﻿using Cirrious.CrossCore;
+using Cirrious.MvvmCross.ViewModels;
 using System;
 using System.Threading.Tasks;
 
@@ -118,6 +119,14 @@ namespace Cirrious.MvvmCross.Plugins.Controllers
         protected virtual void Dispose(bool disposing)
         {
             
+        }
+
+        public virtual void Recreate()
+        {
+            Mvx.Trace("MvxController: Recreate (usually via ViewModelReload)");
+            _oneTimeInitTask = null;
+            IsDisposed = false;
+            IsInitialized = false;
         }
     }
 }

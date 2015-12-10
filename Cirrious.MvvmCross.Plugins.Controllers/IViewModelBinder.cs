@@ -19,5 +19,15 @@ namespace Cirrious.MvvmCross.Plugins.Controllers
         /// <param name="savedState"></param>
         /// <exception cref="ArgumentException">If the controller cannot be found.</exception>
         void Bind(IMvxViewModel viewModel, IMvxBundle parameterValues, IMvxBundle savedState);
+
+        /// <summary>
+        /// Reloads the controller for a view model, re-running
+        /// its lifecycle methods
+        /// </summary>
+        /// <param name="viewModel"></param>
+        /// <param name="parameterValues"></param>
+        /// <param name="savedState"></param>
+        /// <exception cref="ArgumentException">If the controller cannot be found.</exception>
+        void Reload(IMvxViewModel viewModel, IMvxBundle parameterValues, IMvxBundle savedState);
     }
 }

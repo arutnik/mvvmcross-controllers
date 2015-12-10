@@ -54,24 +54,7 @@ namespace Cirrious.MvvmCross.Plugins.Controllers
                         viewModelAware.AttachViewModel(viewModel);
                     }
 
-                    try
-                    {
-                        CallControllerInitMethods(controller, parameterValues);
-                        if (savedState != null)
-                        {
-                            CallReloadStateMethods(controller, savedState);
-                        }
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MvxTrace.Error("MvxControllers: Problem initialising controller of type {0} - problem {1}",
-                            controllerType.Name, ex.ToLongString());
-
-                        throw;
-                    }
-
-					controller.WaitForInitialize();
+                    RunControllerLifecycleMethods(controllerAware, controller, parameterValues, savedState);
                 }
                 catch (Exception ex)
                 {
@@ -82,6 +65,57 @@ namespace Cirrious.MvvmCross.Plugins.Controllers
                     throw;
                 }
             }
+        }
+
+
+        public void Reload(IMvxViewModel viewModel, IMvxBundle parameterValues, IMvxBundle savedState)
+        {
+            var controllerAware = viewModel as IControllerAware;
+            if (controllerAware != null)
+            {
+                try
+                {
+                    var controller = controllerAware.Controller;
+                    if (controller != null)
+                    {
+                        controller.Recreate();
+                        RunControllerLifecycleMethods(controllerAware, controller, parameterValues, savedState);
+                    }
+                    else
+                    {
+                        Bind(viewModel, parameterValues, savedState);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MvxTrace.Error("MvxControllers: Problem reloading ViewModel of type {0} - problem {1}",
+                        viewModel.GetType().Name,
+                        ex.ToLongString());
+
+                    throw;
+                }
+            }
+        }
+
+        protected void RunControllerLifecycleMethods(IControllerAware controllerAware, IMvxController controller, IMvxBundle parameterValues = null, IMvxBundle savedState = null)
+        {
+            try
+            {
+                CallControllerInitMethods(controller, parameterValues);
+                if (savedState != null)
+                {
+                    CallReloadStateMethods(controller, savedState);
+                }
+            }
+            catch (Exception ex)
+            {
+                MvxTrace.Error("MvxControllers: Problem initialising controller of type {0} - problem {1}",
+                    controller.GetType().Name, ex.ToLongString());
+
+                throw;
+            }
+
+            controller.WaitForInitialize();
         }
 
         protected virtual Type GetControllerTypeForViewModel(IEnumerable<Type> createableTypes, IMvxViewModel viewModel)
