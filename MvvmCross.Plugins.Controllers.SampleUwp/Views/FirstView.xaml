@@ -1,0 +1,23 @@
+﻿<local:WindowsPageBase
+    x:Class="MvvmCross.Plugins.Controllers.SampleUwp.Views.FirstView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MvvmCross.Plugins.Controllers.SampleUwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="100">
+
+            <TextBlock Text="{Binding Hello}" />
+
+            <TextBlock Text="The slider value will be the same when we navigate back." />
+            <TextBlock Text="{Binding NumberState}" />
+            <Slider Value="{Binding NumberState, Mode=TwoWay}" />
+
+            <Button Command="{Binding GoNextWithArguments}" Content="Go next and send number" />
+            <Button Command="{Binding GoNextNoArgs}" Content="Go next and send nothing" />
+        </StackPanel>
+    </Grid>
+</local:WindowsPageBase>
