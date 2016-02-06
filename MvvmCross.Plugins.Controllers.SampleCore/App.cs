@@ -1,13 +1,11 @@
-using Cirrious.CrossCore.IoC;
-using System.Linq;
-using System;
-using System.Reflection;
-using System.Collections.Generic;
-using Cirrious.CrossCore;
+
+using MvvmCross.Platform.IoC;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 
 namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore
 {
-    public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
+    public class App : MvxApplication
     {
         public override void Initialize()
         {
@@ -19,7 +17,7 @@ namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore
             RegisterAppStart<ViewModels.FirstViewModel>();
         }
 
-        protected override MvvmCross.ViewModels.IMvxViewModelLocator CreateDefaultViewModelLocator()
+        protected override IMvxViewModelLocator CreateDefaultViewModelLocator()
         {
             var defaultLocator = base.CreateDefaultViewModelLocator();
             

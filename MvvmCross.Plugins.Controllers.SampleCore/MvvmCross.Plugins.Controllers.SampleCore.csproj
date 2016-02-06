@@ -44,7 +44,7 @@
     <Compile Include="ViewModels\FirstViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Cirrious.MvvmCross.Plugins.Controllers\Cirrious.MvvmCross.Plugins.Controllers.csproj">
+    <ProjectReference Include="..\MvvmCross.Plugins.Controllers\MvvmCross.Plugins.Controllers.csproj">
       <Project>{afe493d3-7b4c-4e23-8882-3fe053b7b193}</Project>
       <Name>Cirrious.MvvmCross.Plugins.Controllers</Name>
     </ProjectReference>
