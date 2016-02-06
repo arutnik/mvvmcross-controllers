@@ -1,7 +1,6 @@
-using Cirrious.MvvmCross.ViewModels;
 using System.Windows.Input;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore.ViewModels
+namespace MvvmCross.Plugins.Controllers.SampleCore.ViewModels
 {
     public class SecondViewModel 
 		: ControllerViewModelBase

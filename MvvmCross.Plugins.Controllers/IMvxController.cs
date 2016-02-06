@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Controllers hold the logic for

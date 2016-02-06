@@ -3,7 +3,7 @@ using MvvmCross.Platform;
 using System;
 using System.Threading.Tasks;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// A default implementation of IMvXcontroller

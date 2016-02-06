@@ -1,5 +1,5 @@
 ﻿
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Implemented by view models which are controller enabled.

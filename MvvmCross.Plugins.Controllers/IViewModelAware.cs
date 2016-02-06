@@ -1,6 +1,6 @@
 ﻿using MvvmCross.Core.ViewModels;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Represents an entity that can attach a View Model

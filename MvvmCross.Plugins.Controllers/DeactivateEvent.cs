@@ -1,4 +1,4 @@
-﻿namespace Cirrious.MvvmCross.Plugins.Controllers
+﻿namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Describes types of deactivation

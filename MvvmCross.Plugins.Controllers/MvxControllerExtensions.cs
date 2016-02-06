@@ -4,7 +4,7 @@ using MvvmCross.Platform.Core;
 using System.Linq;
 using System.Reflection;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Contains helper methods for Controllers and their View Models

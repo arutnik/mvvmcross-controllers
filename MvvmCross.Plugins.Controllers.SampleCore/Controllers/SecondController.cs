@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MvvmCross.Core.ViewModels;
+using MvvmCross.Plugins.Controllers.SampleCore.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore.Controllers
+namespace MvvmCross.Plugins.Controllers.SampleCore.Controllers
 {
     public class SecondController : MvxController<SecondViewModel>
     {

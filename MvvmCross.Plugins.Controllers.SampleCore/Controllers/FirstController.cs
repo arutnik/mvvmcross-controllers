@@ -1,8 +1,9 @@
-﻿using Cirrious.MvvmCross.Plugins.Controllers.SampleCore.ViewModels;
+﻿using MvvmCross.Plugins.Controllers.SampleCore.ViewModels;
 using MvvmCross.Core.ViewModels;
 using System.Threading.Tasks;
+using MvvmCross.Platform;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore.Controllers
+namespace MvvmCross.Plugins.Controllers.SampleCore.Controllers
 {
     public class FirstController : MvxController<FirstViewModel>
     {

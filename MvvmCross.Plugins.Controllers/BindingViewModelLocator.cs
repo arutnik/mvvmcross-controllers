@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Core.ViewModels;
 using System;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// A ViewModelLocator that uses a core locator implementation and then a binder

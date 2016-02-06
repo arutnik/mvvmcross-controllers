@@ -8,12 +8,12 @@
     <ProjectGuid>{C4C4C788-33BB-42C9-BB19-C21CB8E08508}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cirrious.MvvmCross.Plugins.Controllers.SampleCore</RootNamespace>
-    <AssemblyName>Cirrious.MvvmCross.Plugins.Controllers.SampleCore</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Controllers.SampleCore</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Controllers.SampleCore</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
@@ -46,7 +46,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MvvmCross.Plugins.Controllers\MvvmCross.Plugins.Controllers.csproj">
       <Project>{afe493d3-7b4c-4e23-8882-3fe053b7b193}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.Controllers</Name>
+      <Name>MvvmCross.Plugins.Controllers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -71,13 +71,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

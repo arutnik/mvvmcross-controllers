@@ -3,7 +3,7 @@ using MvvmCross.Platform.IoC;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore
+namespace MvvmCross.Plugins.Controllers.SampleCore
 {
     public class App : MvxApplication
     {

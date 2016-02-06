@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Core.ViewModels;
 using System;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Supports creating a controller for a View Model

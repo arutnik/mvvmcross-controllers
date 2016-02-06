@@ -2,7 +2,7 @@
 using MvvmCross.Core.ViewModels;
 using System;
 
-namespace Cirrious.MvvmCross.Plugins.Controllers
+namespace MvvmCross.Plugins.Controllers
 {
     /// <summary>
     /// Basic implementation of view model that attaches a controller
