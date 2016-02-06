@@ -7,14 +7,14 @@
 --This causes MvvmCross to create a new controller for a view model upn navigation to it.
 --This example application shows how to replace the locator:
 
-namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore
+namespace MvvmCross.Plugins.Controllers.SampleCore
 {
-    public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
+    public class App : MvvmCross.Core.ViewModels.MvxApplication
     {
         //Add your own usual overrides...
         //...
 
-        protected override MvvmCross.ViewModels.IMvxViewModelLocator CreateDefaultViewModelLocator()
+        protected override MvvmCross.Core.ViewModels.IMvxViewModelLocator CreateDefaultViewModelLocator()
         {
             var defaultLocator = base.CreateDefaultViewModelLocator();
             
