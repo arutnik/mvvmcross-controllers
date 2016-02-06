@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Controlle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Controllers.SampleCore", "MvvmCross.Plugins.Controllers.SampleCore\MvvmCross.Plugins.Controllers.SampleCore.csproj", "{C4C4C788-33BB-42C9-BB19-C21CB8E08508}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Controllers.SampleUwp", "MvvmCross.Plugins.Controllers.SampleUwp\MvvmCross.Plugins.Controllers.SampleUwp.csproj", "{7D453F20-E295-4ADA-B7F2-C145326E1859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Build|Any CPU = Build|Any CPU
@@ -68,6 +70,47 @@ Global
 		{C4C4C788-33BB-42C9-BB19-C21CB8E08508}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{C4C4C788-33BB-42C9-BB19-C21CB8E08508}.Release|x64.ActiveCfg = Release|Any CPU
 		{C4C4C788-33BB-42C9-BB19-C21CB8E08508}.Release|x86.ActiveCfg = Release|Any CPU
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|Any CPU.ActiveCfg = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|Any CPU.Build.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|Any CPU.Deploy.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|ARM.ActiveCfg = Release|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|ARM.Build.0 = Release|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|ARM.Deploy.0 = Release|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|iPhone.ActiveCfg = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|iPhone.Build.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|iPhone.Deploy.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|x64.ActiveCfg = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|x64.Build.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|x64.Deploy.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|x86.ActiveCfg = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|x86.Build.0 = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Build|x86.Deploy.0 = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|Any CPU.Build.0 = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|Any CPU.Deploy.0 = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|ARM.ActiveCfg = Debug|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|ARM.Build.0 = Debug|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|ARM.Deploy.0 = Debug|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|iPhone.ActiveCfg = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|x64.ActiveCfg = Debug|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|x64.Build.0 = Debug|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|x64.Deploy.0 = Debug|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|x86.ActiveCfg = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|x86.Build.0 = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Debug|x86.Deploy.0 = Debug|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|Any CPU.ActiveCfg = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|Any CPU.Build.0 = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|Any CPU.Deploy.0 = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|ARM.ActiveCfg = Release|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|ARM.Build.0 = Release|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|ARM.Deploy.0 = Release|ARM
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|iPhone.ActiveCfg = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|x64.ActiveCfg = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|x64.Build.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|x64.Deploy.0 = Release|x64
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|x86.ActiveCfg = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|x86.Build.0 = Release|x86
+		{7D453F20-E295-4ADA-B7F2-C145326E1859}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
