@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.Controllers", "Cirrious.MvvmCross.Plugins.Controllers\Cirrious.MvvmCross.Plugins.Controllers.csproj", "{AFE493D3-7B4C-4E23-8882-3FE053B7B193}"
 EndProject
@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5E84B3
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.Controllers.SampleStore", "Cirrious.MvvmCross.Plugins.Controllers.SampleStore\Cirrious.MvvmCross.Plugins.Controllers.SampleStore.csproj", "{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.Controllers.SampleCore", "Cirrious.MvvmCross.Plugins.Controllers.SampleCore\Cirrious.MvvmCross.Plugins.Controllers.SampleCore.csproj", "{C4C4C788-33BB-42C9-BB19-C21CB8E08508}"
 EndProject
@@ -59,45 +57,6 @@ Global
 		{AFE493D3-7B4C-4E23-8882-3FE053B7B193}.Release|x64.ActiveCfg = Release|Any CPU
 		{AFE493D3-7B4C-4E23-8882-3FE053B7B193}.Release|x86.ActiveCfg = Release|x86
 		{AFE493D3-7B4C-4E23-8882-3FE053B7B193}.Release|x86.Build.0 = Release|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|Any CPU.ActiveCfg = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|Any CPU.Build.0 = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|Any CPU.Deploy.0 = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|ARM.ActiveCfg = Release|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|ARM.Build.0 = Release|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|ARM.Deploy.0 = Release|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|iPhone.ActiveCfg = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|x64.ActiveCfg = Release|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|x64.Build.0 = Release|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|x64.Deploy.0 = Release|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|x86.ActiveCfg = Release|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|x86.Build.0 = Release|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Build|x86.Deploy.0 = Release|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|ARM.ActiveCfg = Debug|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|ARM.Build.0 = Debug|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|ARM.Deploy.0 = Debug|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|x64.ActiveCfg = Debug|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|x64.Build.0 = Debug|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|x64.Deploy.0 = Debug|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|x86.ActiveCfg = Debug|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|x86.Build.0 = Debug|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Debug|x86.Deploy.0 = Debug|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|ARM.ActiveCfg = Release|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|ARM.Build.0 = Release|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|ARM.Deploy.0 = Release|ARM
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|x64.ActiveCfg = Release|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|x64.Build.0 = Release|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|x64.Deploy.0 = Release|x64
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|x86.ActiveCfg = Release|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|x86.Build.0 = Release|x86
-		{7502B1C0-02C1-4345-9F10-F0CF3F4F30B6}.Release|x86.Deploy.0 = Release|x86
 		{C4C4C788-33BB-42C9-BB19-C21CB8E08508}.Build|Any CPU.ActiveCfg = Release|Any CPU
 		{C4C4C788-33BB-42C9-BB19-C21CB8E08508}.Build|Any CPU.Build.0 = Release|Any CPU
 		{C4C4C788-33BB-42C9-BB19-C21CB8E08508}.Build|ARM.ActiveCfg = Release|Any CPU

@@ -1,4 +1,4 @@
-﻿using Cirrious.MvvmCross.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
 using System;
 
 namespace Cirrious.MvvmCross.Plugins.Controllers

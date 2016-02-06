@@ -1,10 +1,5 @@
-﻿using Cirrious.CrossCore;
-using Cirrious.MvvmCross.Plugins.Controllers.SampleCore.ViewModels;
-using Cirrious.MvvmCross.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Cirrious.MvvmCross.Plugins.Controllers.SampleCore.ViewModels;
+using MvvmCross.Core.ViewModels;
 using System.Threading.Tasks;
 
 namespace Cirrious.MvvmCross.Plugins.Controllers.SampleCore.Controllers
